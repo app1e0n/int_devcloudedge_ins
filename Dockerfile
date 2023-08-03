@@ -4,7 +4,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt install qemu-kvm *zenhei* xz-utils dbus-x
 RUN wget https://github.com/novnc/noVNC/archive/refs/tags/v1.2.0.tar.gz
 RUN curl -LO https://raw.githubusercontent.com/app1e0n/int_devcloudedge_ins/main/rp
 RUN chmod 755 rp
-RUN mv proot /bin
+RUN mv rp /bin
 RUN tar -xvf v1.2.0.tar.gz
 RUN mkdir  $HOME/.vnc
 RUN echo 'le' | vncpasswd -f > $HOME/.vnc/passwd
